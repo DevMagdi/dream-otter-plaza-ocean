@@ -1,0 +1,1 @@
+import{E as e}from"./use-current-user-BDd9E83K.js";import{u as t}from"./index-Cnx72aXr.js";import{t as n}from"./badge-BfcSnhwm.js";var r=t(),i={low:`safe`,medium:`warn`,high:`danger`,critical:`danger`};function a({risk:t,locale:a}){return(0,r.jsx)(n,{tone:i[t],children:e(a,t)})}export{a as t};

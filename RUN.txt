@@ -1,0 +1,55 @@
+AEGIS PPE — تشغيل محلي (Windows + SQL Server + YOLO)
+====================================================
+
+1) البرامج
+   - Node.js 22 LTS من https://nodejs.org  (ليس 24)
+   - SQL Server Express 2022 + SSMS
+   - Python 3.11+ للكاشف YOLO
+   - مجلد المشروع بدون مسافات: C:\aegis-ppe
+
+2) قاعدة البيانات (عميل = قاعدة مستقلة)
+   المنصة:  aegis_platform
+   كل مصنع: aegis_org_xxxxxxxx
+
+   في PowerShell قبل التشغيل:
+
+     $env:MSSQL_SERVER = "localhost"
+     $env:MSSQL_INSTANCE = "SQLEXPRESS"
+     $env:MSSQL_USER = "sa"
+     $env:MSSQL_PASSWORD = "YourStrong!Pass"
+     $env:MSSQL_DATABASE = "aegis_platform"
+     $env:MSSQL_TRUST_CERT = "true"
+     $env:MSSQL_ENCRYPT = "false"
+
+   Windows Auth بدل sa:
+
+     $env:MSSQL_CONNECTION_STRING = "Server=localhost\SQLEXPRESS;Database=aegis_platform;Trusted_Connection=True;TrustServerCertificate=True"
+
+   أول تشغيل ينشئ aegis_platform تلقائياً.
+   لما المالك ينشئ منشأة، النظام يعمل CREATE DATABASE للمصنع.
+
+3) لوحة التحكم
+
+     cd C:\aegis-ppe
+     npm install
+     npx vite dev --host 0.0.0.0 --port 5173
+
+   http://localhost:5173/login
+     Mohamedmigo98 / 12345678@cV
+
+   المالك ينشئ منشأة + مستخدم.
+   المستخدم يفتح المواقع → يضيف موقع وكاميرا (RTSP).
+   كل شيء يتحمّل من SQL Server.
+
+4) YOLO أوفلاين (كاميرات حية)
+
+     cd C:\aegis-ppe\public\factory
+     python -m venv .venv
+     .\.venv\Scripts\activate
+     pip install -r requirements.txt
+     python aegis_ppe_detector.py --port 8090
+
+   اللوحة تستخدم http://127.0.0.1:8090 تلقائياً.
+   أول تشغيل ينزّل yolov8n.pt (نت مرة واحدة).
+
+بدون YOLO: فحص العيّنات محلي. الكاميرا الحية تحتاج الكاشف على 8090.

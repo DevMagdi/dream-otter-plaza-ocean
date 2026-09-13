@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/settings",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "AEGIS",
+      "hasCanvas": false,
+      "bodyTextLen": 1899,
+      "bodyTextHash": "1b05657ee517c0c44a789457246cbbab1828b7d1e80a708818d7281a9d84e4b6",
+      "bodyTextPrefix": "أيجيس PPE VISION العمليات الكشف المخالفات 5 المواقع التقارير 1 ا",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/settings-smoke.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "AEGIS",
+      "hasCanvas": false,
+      "bodyTextLen": 1843,
+      "bodyTextHash": "d19b2f036778269bef5b4ad65a9c48464bc3782afb91fb7203c39b32037dab97",
+      "bodyTextPrefix": "أيجيس PPE EN أيجيس الإعدادات ماذا تفحص كل كاميرا فعّل الكاميرا، ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/settings-smoke-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/settings-smoke.json"
+}

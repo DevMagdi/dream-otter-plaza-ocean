@@ -1,0 +1,8 @@
+{
+  "MSSQL_SERVER": "DESKTOP-A0QINRF\\MSSQLSERVERTEST",
+  "MSSQL_USER": "FGS",
+  "MSSQL_PASSWORD": "123456",
+  "MSSQL_DATABASE": "aegis_platform",
+  "MSSQL_ENCRYPT": "false",
+  "MSSQL_TRUST_CERT": "true"
+}

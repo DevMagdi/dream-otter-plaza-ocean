@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "AEGIS",
+      "hasCanvas": false,
+      "bodyTextLen": 220,
+      "bodyTextHash": "fe972e9b3ec2d43061a4bc4c8f25733043d6de757db60c324873729864a99cf6",
+      "bodyTextPrefix": "أيجيس منصة سلامة للمصانع دخول غرفة التحكم حساب المنشأة: Google أ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "AEGIS",
+      "hasCanvas": false,
+      "bodyTextLen": 220,
+      "bodyTextHash": "fe972e9b3ec2d43061a4bc4c8f25733043d6de757db60c324873729864a99cf6",
+      "bodyTextPrefix": "أيجيس منصة سلامة للمصانع دخول غرفة التحكم حساب المنشأة: Google أ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

@@ -1,0 +1,1 @@
+import{o as e,u as t}from"./index-Cnx72aXr.js";var n=t(),r=()=>(0,n.jsx)(e,{to:`/locked`});export{r as component};
